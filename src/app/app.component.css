@@ -1,0 +1,37 @@
+.animationContainer {
+  margin-top: 100px;
+  width: 270px;
+  height: 70px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.prevTime,
+.currTime {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+}
+
+span {
+  display: inline-block;
+}
+
+span.opacity {
+  opacity: 0;
+}
+.animate {
+  /* transform: translateY(-70px); */
+  animation: animate var(--dur) ease;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

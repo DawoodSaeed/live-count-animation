@@ -1,0 +1,10 @@
+<div class="animationContainer">
+  <div class="currTime">
+    <span
+      *ngFor="let num of currCount; let i = index"
+      [ngClass]="{ animate: mismatchIndexes.includes(i) }"
+      [ngStyle]="{ '--dur': setDuration(i) }"
+      >{{ num }}</span
+    >
+  </div>
+</div>
